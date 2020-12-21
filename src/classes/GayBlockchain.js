@@ -1,4 +1,6 @@
 
+const GayBlock = require('GayBlock');
+
 class GayBlockchain {
 
 	constructor () {
@@ -9,7 +11,7 @@ class GayBlockchain {
 
 	GenesisBlock () {
 
-		return new CryptoBlock(0, "01/01/2020", "Initial Block in the Chain", "0");
+		return new GayBlock(0, "01/01/2020", "Initial Block in the Chain", "0");
 	}
 
 	GetLatestBlock () {
